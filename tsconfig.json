@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"noEmit": true,
+		"skipLibCheck": true,
+		"types": ["@rsbuild/core/types", "node"],
+		"useDefineForClassFields": true,
+
+		/* modules */
+		"moduleDetection": "force",
+		"moduleResolution": "bundler",
+		"verbatimModuleSyntax": true,
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true,
+
+		/* type checking */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"include": ["src", "rsbuild.config.ts"]
+}

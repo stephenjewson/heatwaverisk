@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=block"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="prototype">
+			<h2>PROTOTYPE</h2>
+			UNDER CONSTRUCTION
+		</div>
+		<nav>
+			<div class="title">
+				<strong>heat</strong> <i>wave</i> <strong>risk</strong>
+			</div>
+			<div>
+				<a href="#background">Background</a>
+				<a href="#technical">Technical</a>
+				<a href="#references">References</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</nav>
+		<main>
+			<div id="map-container">
+				<!-- https://www.gloh2o.org/koppen/ -->
+				<img
+					src="<%= require('./koppen_geiger_1991_2020.webp') %>"
+					alt="Map of the world"
+					class="map"
+				/>
+				<div class="infopanel">Hover over a weather station</div>
+			</div>
+			<form id="charts">
+				<div class="nav"></div>
+				<div class="display">
+					<div class="img-container"></div>
+					<div class="controls">
+						<fieldset>
+							<legend>Variable</legend>
+							<ul class="radiolist">
+								<li>
+									<label>
+										<input type="radio" name="type" value="1" checked />Heatwave
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="type" value="2" />Hot Days
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Figure</legend>
+							<ul class="radiolist">
+								<li>
+									<label>
+										<input type="radio" name="fig" value="2" checked />PDF
+									</label>
+								</li>
+								<li>
+									<label><input type="radio" name="fig" value="3" />EP</label>
+								</li>
+								<li>
+									<label><input type="radio" name="fig" value="4" />2027</label>
+								</li>
+								<li>
+									<label><input type="radio" name="fig" value="5" />1970</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="fig" value="6" />Change
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="fig" value="7" />vs GMST
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="fig" value="8" />vs year
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="fig" value="9" />QQ plots
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+				</div>
+			</form>
+
+			<section id="background">
+				<br />
+				<p>July 2026</p>
+				<p>-------- work in progress ----------</p>
+				<h2>Background and Overview</h2>
+				<ul>
+					<li>Blah blah blah</li>
+				</ul>
+			</section>
+
+			<section id="technical">
+				<h2>Technical Details</h2>
+			</section>
+
+			<section id="references">
+				<h2>References</h2>
+
+				1) A paper that...
+				<ul>
+					<li>
+						S. Jewson (2023):<cite>
+							ABC:
+							<a
+								href="https://doi.org/10.1175/JAMC-D-23-0087.1"
+								target="_blank"
+							>
+								Journal of Applied Meteorology and Climatology
+							</a>
+						</cite>
+					</li>
+				</ul>
+			</section>
+
+			<section id="contact">
+				<h2>Contact</h2>
+				Any questions, suggestions, or comments, please drop an email to
+				stephen-dot-jewson-at-gmail-dot-com.
+			</section>
+
+			<footer>
+				© 2026 S Jewson,
+				<a href="https://www.stephenjewson.com" target="_blank">
+					www.stephenjewson.com
+				</a>
+			</footer>
+		</main>
+	</body>
+</html>

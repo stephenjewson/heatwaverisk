@@ -1,0 +1,26 @@
+{
+	"name": "heatwaverisk",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "rsbuild build",
+		"dev": "rsbuild",
+		"fmt": "prettier --write .",
+		"preview": "rsbuild preview",
+		"check": "prettier --check . && tsc"
+	},
+	"devDependencies": {
+		"@rsbuild/core": "^2.1.13",
+		"@rsbuild/plugin-image-compress": "^1.3.4",
+		"@types/node": "^24.13.3",
+		"prettier": "^3.9.5",
+		"prettier-plugin-ejs": "^1.0.3",
+		"rsbuild-plugin-html-minifier-terser": "^1.1.5",
+		"typescript": "^6.0.3"
+	},
+	"packageManager": "pnpm@12.0.0-rc.6+sha512.3927fce49c3054b7e5541dc720bce7b4ebab07f4562fa6ffce7b39720a25e6a767d76384984e2265c800799613f7f79c5c422e9f5cedc9b66cfffd08ca3c77a9",
+	"dependencies": {
+		"panzoom": "^9.4.4"
+	}
+}
