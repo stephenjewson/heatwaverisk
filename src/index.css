@@ -185,6 +185,10 @@ nav {
 				border: none;
 				padding: 10px 0;
 				margin: 0;
+				&.disabled {
+					color: #aaa;
+					pointer-events: none;
+				}
 			}
 		}
 		@media not (min-width: 1000px) {

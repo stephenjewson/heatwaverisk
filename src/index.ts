@@ -128,8 +128,9 @@ function set_up_charts(charts: HTMLFormElement): {
 	const station_input = charts.elements.namedItem(
 		"station",
 	) as HTMLInputElement;
-	const type_input = charts.elements.namedItem("type") as HTMLInputElement;
-	const fig_input = charts.elements.namedItem("fig") as HTMLInputElement;
+	const type_input = charts.elements.namedItem("type") as RadioNodeList;
+	const fig_input = charts.elements.namedItem("fig") as RadioNodeList;
+	const fig_fieldset = charts.querySelector("fieldset.fig") as HTMLElement;
 
 	const update = async () => {
 		const station = station_input.value;
@@ -137,8 +138,19 @@ function set_up_charts(charts: HTMLFormElement): {
 		const type = type_input.value;
 		const fig = fig_input.value;
 		const img = new Image();
+
+		const disable_fig = type === "a";
+		for (const input of fig_input) {
+			input.disabled = disable_fig;
+		}
+		fig_fieldset.classList.toggle("disabled", disable_fig);
+
 		img.src = (
-			await figures[`./${station}_type${type}_fig${fig}.webp`]()
+			await figures[
+				type === "a"
+					? `./${station}_fig1.webp`
+					: `./${station}_type${type}_fig${fig}.webp`
+			]()
 		).default;
 		await img.decode();
 		img_container.replaceChildren(img);
