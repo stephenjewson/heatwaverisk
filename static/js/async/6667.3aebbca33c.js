@@ -1,0 +1,1 @@
+"use strict";(self.rspackChunkheatwaverisk=self.rspackChunkheatwaverisk||[]).push([[6667],{2918(e,s,a){e.exports=a.p+"static/image/FR000007130_type1_fig4.adb84eb5f2.webp"}}]);
