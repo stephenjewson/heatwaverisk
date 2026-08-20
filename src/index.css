@@ -209,7 +209,7 @@ nav {
 				flex: 1 1 0px;
 			}
 			> .controls {
-				flex: 0 0 auto;
+				flex: 0 0 180px;
 				align-self: flex-start;
 				position: sticky;
 				top: 16px;
